@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Day39_Web01</display-name>
+  
+  <!-- Myservlet01 -->
+  <servlet>
+  	<servlet-name>MyServlet01</servlet-name>
+  	<servlet-class>com.lxq.servlets.MyServlet01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyServlet01</servlet-name>
+  	<url-pattern>/ms.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MyServlet02中init的参数 -->
+  <servlet>
+  	<servlet-name>MyServlet02</servlet-name>
+  	<servlet-class>com.lxq.servlets.MyServlet02</servlet-class>
+  	<init-param>
+  		<param-name>card_no</param-name>
+  		<param-value>java001</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>card_pass</param-name>
+  		<param-value>JQKA</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyServlet02</servlet-name>
+  	<url-pattern>/ms02.do</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
